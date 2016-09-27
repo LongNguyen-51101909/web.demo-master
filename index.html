@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Re'sume - Long Nguyen</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="shortcut icon" href="ico/hairband.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body style="height: 10958px;">
+<div class="fr-top">
+</div>
+<div id="thing" data-0="left[cos]:10%; top[sin]:10%" data-10000="left:90%; top: 90%;"
+     class="skrollable skorolable-between"
+     style="left: 50%; top: 10%;">
+
+    <img src="images/140_ipad-pro-97-wifi-32gb-space-grey-600x600.jpg">
+    <img src="images/140_laptop-dell-inspiron-15-3000-series-n3552-70082004-600x600.jpg">
+</div>
+<div class="introduce-mine">
+    <h1> Wellcome to demo JavaScript</h1>
+    <small>Scroll to effect</small>
+</div>
+
+
+<script type="text/javascript" src="js/libs.js"></script>
+<script type="text/javascript" src="js/plugins.js"></script>
+<script type="text/javascript" src="js/start.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+<script type="text/javascript">
+    skrollr.init({
+        easing: {
+            sin: function (p) {
+                return (Math.sin(p * Math.PI * 2 - Math.PI / 2) + 1) / 2;
+            },
+
+            cos: function (p) {
+                return (Math.cos(p * Math.PI * 2 - Math.PI / 2) + 1) / 2;
+            }
+        },
+        render: function (data) {
+            //loop
+            if (data.curTop === data.maxTop) {
+                this.setScrollTop(0, true);
+            }
+        }
+    });
+</script>
+</body>
+</html>

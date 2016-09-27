@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>draw circur</title>
+    <link rel="shortcut icon" href="ico/songbird.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body style="height: 10958px;">
+<div id="thing" data-0="left[cos]:10%; top[sin]:10%;" data-10000="left:90%; top: 90%;" class="skrollable skorolable-between"
+     style="left: 50%; top: 10%;">
+
+</div>
+<script src="js/libs.js" ></script>
+<script src="js/plugins.js" ></script>
+<script type="text/javascript" src="js/start.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript">
+    skrollr.init({
+        easing: {
+            sin : function (p) {
+                return (Math.sin(p * Math.PI*2 - Math.PI/2) + 1) /2;
+            },
+
+            cos : function (p) {
+                return (Math.cos(p * Math.PI * 2 - Math.PI/2) + 1) / 2;
+            }
+        },
+        render : function(data) {
+            //loop
+            if (data.curTop === data.maxTop) {
+                this.setScrollTop(0, true);
+            }
+        },
+    })
+</script>
+</body>
+</html>
