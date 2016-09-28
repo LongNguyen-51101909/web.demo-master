@@ -16,11 +16,43 @@
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="shortcut icon" href="ico/hairband.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <!--icon lib-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!--font lib google api-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <!--theme css import-->
+    <link rel="stylesheet" href="css/fr-theme-blue-gray.css">
+    <style>
+        html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+    </style>
 </head>
-<body style="height: 10958px;">
+<body style="height: 10958px;" class="fr-theme-15">
+<!--nav bar-->
 <div class="fr-top">
+    <ul class="fr-navbar fr-theme-d2 fr-left-align fr-large">
+        <li> <a href="#" class="fr-padding-large fr-theme-d4"><i class="fa fa-home fr-margin-righ"></i>Logo</a>
+        </li>
+        <li class="fr-hide-small"><a href="#" class="fr-padding-large fr-hover-white" title="News"><i class="fa fa-globe"></i> </a> </li>
+        <li class="fr-hide-small"> <a href="#" class="fr-padding-large fr-hover-white" title="Account Settings"><i class="fa fa-user"></i> </a> </li>
+        <li class="fr-hide-small"> <a href="#" class="fr-padding-large fr-hover-white" title="Account Settings"><i class="fa fa-envelope"></i> </a> </li>
+        <li class="fr-hide-small fr-dropdown-hover">
+            <a href="#" class="fr-padding-large fr-hover-white" title="Notifications"><i class="fa fa fa-bell"></i>
+            <span class="fr-badge fr-right fr-small fr-green">3</span></a>
+            <div class="fr-dropdown-content fr-white fr-card-4">
+                <a href="#">One new friend request</a>
+                <a href="#">John Doe posted on your wall</a>
+                <a href="#">Jane likes your post</a>
+            </div>
+        </li>
+        <li class="fr-hide-small fr-right">
+            <a href="#" class="fr-padding-large fr-hover-white" title="My account">
+                <img src="images/avatar.jpg" class="fr-circle" style="height:25px; width: 25px;" alt="Avatar">
+            </a>
+        </li>
+    </ul>
 </div>
+
+
 <div id="thing" data-0="left[cos]:10%; top[sin]:10%" data-10000="left:90%; top: 90%;"
      class="skrollable skorolable-between"
      style="left: 50%; top: 10%;">
@@ -28,7 +60,7 @@
     <img src="images/140_ipad-pro-97-wifi-32gb-space-grey-600x600.jpg">
     <img src="images/140_laptop-dell-inspiron-15-3000-series-n3552-70082004-600x600.jpg">
 </div>
-<div class="introduce-mine">
+<div class="introduce-mine" style="display: none">
     <h1> Wellcome to demo JavaScript</h1>
     <small>Scroll to effect</small>
 </div>

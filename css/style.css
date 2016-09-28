@@ -549,8 +549,95 @@ html, body {
     padding:0;
     margin: 0;
     overflow-x: hidden;
-
+    line-height: 1.5;
 }
 body {
     display : block;
+}
+/* W3.CSS 2.76 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+.fr-padding-large {
+    padding: 12px 24px !important;
+}
+.fr-hover-white:hover {
+    color: #000!important;
+    background-color: #fff!important;
+}
+.fr-top {
+    position: fixed;
+    width:100%;
+    z-index:1;
+}
+.fr-top{
+    top: 0;
+}
+
+.fr-navbar a {
+    /*-webkit-transition: backgroud-color .3s,color: .15s, box-shadow .3s;*/
+    transition: backgroud-color .3s, color .15s, box-shadow .3s, opacity 0.3s;
+
+}
+.fr-navbar li a:hover{
+    color:#000;
+    background-color:#ccc
+}
+.fr-navbar{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    position: relative;
+}
+.fr-navbar li{
+    float:left;
+    height: inherit;
+}
+
+.fr-navbar li a {
+    display: block;
+    padding: 8px 16px;
+}
+/*.fr-navbar li a {*/
+    /*color: #fff;*/
+    /*background-color: #000;*/
+/*}*/
+.fr-large{
+    font-size:18px !important;
+}
+.fr-dropdown-hover:hover {
+
+}
+.fr-navbar a{
+    text-decoration: none!important;
+    position: static;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.fr-dropdown-hover:hover .fr-dropdown-content {
+    display: block;
+    z-index: 1;
+}
+.fr-dropdown-content {
+    display: none;
+    /*min-width:100%;*/
+    cursor:auto;
+    position:absolute;
+    min-width:160px;margin:0;padding:0;
+}
+
+.fr-dropdown-content a{padding:6px 16px;display:block}
+.fr-dropdown-content a:hover{background-color:#ccc}
+.fr-right {
+    float: right!important;
+}
+.fr-hide-small li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+a:-webkit-any-link {
+    cursor: auto;
 }
