@@ -1,0 +1,15 @@
+.w3-navbar {
+float: left;
+}
+
+.w3-black {
+
+}
+
+.w3-container {
+float: left;
+}
+ul a{
+    display: block;
+    text-decoration: none !important;
+}
